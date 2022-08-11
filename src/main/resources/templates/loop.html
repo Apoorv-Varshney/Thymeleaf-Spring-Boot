@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="UTF-8" />
+<title>Loop Example</title>
+</head>
+<body>
+	<h1>Cities are ...</h1>
+	<ul th:each="c,status:${city}">
+		<li th:style="${status.odd} ? 'font-weight:bold' : 'color:blue'"
+		 th:text="${status.index+1}+' '+${c}"></li>
+	</ul>
+</body>
+</html>

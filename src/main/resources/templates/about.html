@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+	<meta charset="UTF-8" />
+	<title>About Example</title>
+</head>
+<body>
+	<h1>Welcome...<span th:text="${name}"></span></h1>
+	<h1>Your Name...<span th:text="${#strings.toLowerCase(name)}"></span></h1>
+	<h1>Your Age...<span th:text="${age}"></span></h1>
+	<h2 th:with="a=5,b=6">Sum is : <span th:text="${a+b}"></span></h2>
+</body>
+</html>

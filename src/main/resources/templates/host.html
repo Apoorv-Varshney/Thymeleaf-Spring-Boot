@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="UTF-8" />
+<title>Parent Fragment Page</title>
+</head>
+<body>
+	<footer id="Host" th:include="fragment::footer1(${name},${price})">
+	<h1>This is Parent Host Page</h1>
+	</footer>
+
+</body>
+</html>
